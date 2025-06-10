@@ -70,6 +70,34 @@ All screenshots of the scans are in the `screenshots/` folder:
 | `version_scan.png`  | `nmap -sV`            |
 | `allports_scan.png` | `nmap -sV --allports` |
 
+## Screenshots
+
+### UDP Scan
+![UDP Scan](screenshots/udp_scan.png)
+
+### TCP Connect Scan
+![TCP Scan](screenshots/tcp_scan.png)
+
+### ACK Scan
+![ACK Scan](screenshots/ack_scan.png)
+
+### Window Scan
+![Window Scan](screenshots/window_scan.png)
+
+### Maimon Scan
+![Maimon Scan](screenshots/maimon_scan.png)
+
+### Basic Scan
+![Basic Scan](screenshots/basic_scan.png)
+
+### Verbose Scan
+![Verbose Scan](screenshots/verbose_scan.png)
+
+### Version Detection
+![Version Detection](screenshots/version_scan.png)
+
+### All Ports Version Detection
+![All Ports Version Scan](screenshots/allports_scan.png)
 
 ---
 
