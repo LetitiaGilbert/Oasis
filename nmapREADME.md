@@ -14,14 +14,20 @@ To perform multiple types of scans using **Nmap** on a localhost target (`127.0.
 
 ## Commands Executed
 
-| Command                         | Purpose                             |
-|---------------------------------|-------------------------------------|
-| `nmap 127.0.0.1`                | Basic TCP scan                      |
-| `nmap -v 127.0.0.1`             | Verbose scan                        |
-| `nmap -sV 127.0.0.1`            | Service & version detection         |
-| `nmap -sU 127.0.0.1`            | UDP port scan                       |
-| `nmap -sV --allports 127.0.0.1` | Scan all 65535 ports with versions  |
-| `nmap -sA / -sW / -sM`          | ACK, Window, Maimon scans for stealth analysis |
+## 🧪 Nmap Scan Commands Used
+
+| Command                         | Description                                                                 |
+|---------------------------------|-----------------------------------------------------------------------------|
+| `nmap -sU 127.0.0.1`            | UDP Scan — checks for open UDP ports                                        |
+| `nmap -sT 127.0.0.1`            | TCP Connect Scan — default, full TCP 3-way handshake                       |
+| `nmap -sA 127.0.0.1`            | ACK Scan — used to map firewall rules and detect filtered ports            |
+| `nmap -sW 127.0.0.1`            | Window Scan — a stealth scan that analyzes TCP window size                 |
+| `nmap -sM 127.0.0.1`            | Maimon Scan — stealth scan technique rarely used but good for firewall evasion |
+| `nmap 127.0.0.1`                | Basic TCP Scan — quick default scan                                        |
+| `nmap -v 127.0.0.1`             | Verbose Scan — same as above but with progress and more output             |
+| `nmap -sV 127.0.0.1`            | Version Detection — detects software version running on open ports        |
+| `nmap -sV --allports 127.0.0.1` | Version detection across all 65,535 TCP ports                              |
+
 
 ---
 
@@ -52,16 +58,18 @@ To perform multiple types of scans using **Nmap** on a localhost target (`127.0.
 
 All screenshots of the scans are in the `screenshots/` folder:
 
-| Scan Type         | File                        |
-|------------------|-----------------------------|
-| Basic Scan        | `scan1.png`                |
-| Verbose           | `scan2.png`                |
-| Version Detection | `scan3.png`                |
-| All Ports         | `scan4.png`                |
-| UDP               | `scan5.png`                |
-| ACK               | `scan6.png`                |
-| Window            | `scan7.png`                |
-| Maimon            | `scan8.png`                |
+| File Name           | Matches Command       |
+| ------------------- | --------------------- |
+| `udp_scan.png`      | `nmap -sU`            |
+| `tcp_scan.png`      | `nmap -sT`            |
+| `ack_scan.png`      | `nmap -sA`            |
+| `window_scan.png`   | `nmap -sW`            |
+| `maimon_scan.png`   | `nmap -sM`            |
+| `basic_scan.png`    | `nmap`                |
+| `verbose_scan.png`  | `nmap -v`             |
+| `version_scan.png`  | `nmap -sV`            |
+| `allports_scan.png` | `nmap -sV --allports` |
+
 
 ---
 
