@@ -14,7 +14,7 @@ To perform multiple types of scans using **Nmap** on a localhost target (`127.0.
 
 ## Commands Executed
 
-## 🧪 Nmap Scan Commands Used
+## Nmap Scan Commands Used
 
 | Command                         | Description                                                                 |
 |---------------------------------|-----------------------------------------------------------------------------|
