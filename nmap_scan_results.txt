@@ -1,1 +1,33 @@
+# Basic TCP Scan
+Command: nmap 127.0.0.1
+Ports found:
+5000/tcp open  upnp
+6789/tcp open  ibm-db2-admin
+7000/tcp open  afs3-fileserver
+
+# Verbose TCP Scan
+Command: nmap -v 127.0.0.1
+Same results with progress details
+
+# Version Detection
+Command: nmap -sV 127.0.0.1
+5000/tcp open  rtsp           AirTunes rtspd 745.13.4
+6789/tcp open  ssl/ibm-db2-admin?
+7000/tcp open  rtsp           AirTunes rtspd 745.13.4
+
+# UDP Scan
+Command: nmap -sU 127.0.0.1
+5353/udp open  zeroconf
+137, 138/udp open|filtered netbios services
+
+# All-Port Scan with Version
+Command: nmap -sV --allports 127.0.0.1
+Identical results, confirms version info.
+
+# ACK, Window, and Maimon scans (stealth checks)
+Commands: 
+- nmap -sA 127.0.0.1
+- nmap -sW 127.0.0.1
+- nmap -sM 127.0.0.1
+=> All ports reset or closed — no results.
 
